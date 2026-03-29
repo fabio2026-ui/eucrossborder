@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🎯 平台SEO -->
+    <title>EU CrossBorder AI Solutions | 一站式AI自动化解决方案平台</title>
+    <meta name="description" content="世界一流的AI自动化解决方案平台。12个专业AI项目，一站式解决您的业务自动化需求。跨境业务、内容创作、数据分析、教育自动化等。">
+    
+    <!-- 设计系统 -->
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="components.css">
+    
+    <style>
+        .project-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-primary);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .project-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            z-index: 10;
+        }
+        
+        .platform-hero {
+            background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-700) 50%, var(--success-500) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .platform-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path fill="rgba(255,255,255,0.05)" d="M0,0h1000v1000H0V0z M250,250h500v500H250V250z"/></svg>');
+            background-size: 200px;
+            opacity: 0.1;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        @media (min-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- 🎯 平台导航 -->
+    <header class="navbar container">
+        <a href="/" class="nav-logo">
+            <span>🚀</span>
+            <span>EU CrossBorder AI</span>
+        </a>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#projects" class="nav-link">所有项目</a></li>
+                <li><a href="#pricing" class="nav-link">统一定价</a></li>
+                <li><a href="#dashboard" class="nav-link">用户仪表板</a></li>
+                <li><a href="#enterprise" class="nav-link">企业方案</a></li>
+                <li><a href="#login" class="btn btn-outline btn-sm">登录</a></li>
+                <li><a href="#signup" class="btn btn-primary btn-sm">免费开始</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🚀 平台英雄区域 -->
+    <section class="platform-hero section">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="hero-title">
+                    一站式<span class="text-white">AI自动化解决方案</span>
+                </h1>
+                
+                <p class="hero-subtitle text-white/90 max-w-3xl mx-auto">
+                    12个专业AI项目，统一平台，世界一流体验。
+                    从跨境业务到内容创作，从数据分析到教育自动化，
+                    所有AI需求，一个平台解决。
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <a href="#projects" class="btn btn-white btn-xl">
+                        🚀 探索所有项目
+                    </a>
+                    <a href="#signup" class="btn btn-outline btn-xl text-white border-white hover:bg-white/10">
+                        📝 免费开始
+                    </a>
+                </div>
+                
+                <!-- 平台统计 -->
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">专业AI项目</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">服务可用性</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">300%</span>
+                        <span class="stat-label">平均效率提升</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">AI自动化运行</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📊 所有项目展示 -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">所有AI项目</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    选择您需要的AI解决方案，或组合使用获得更大价值
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 项目1: EU跨境AI Agent -->
+                <div class="project-card card animate-slide-up">
+                    <div class="project-badge">
+                        <span class="badge badge-primary">最受欢迎</span>
+                    </div>
+                    
+                    <div class="card-header">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-2xl">
+                                🌍
+                            </div>
+                            <div>
+                                <h3 class="card-title">EU跨境AI Agent</h3>
+                                <p class="card-subtitle">跨境业务自动化</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p class="text-gray-600 mb-4">
+                            自动化EU跨境订单处理、客户支持、物流跟踪。
+                            提高效率300%，降低成本70%。
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <span class="text-2xl font-bold">€29.99</span>
+                                <span class="text-gray-500">/月</span>
+                            </div>
+                            <a href="/eu-crossborder-agent" class="btn btn-primary btn-sm">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目2: AI内容工厂 -->
+                <div class="project-card card animate-slide-up delay-100">
+                    <div class="card-header">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl">
+                                🏭
+                            </div>
+                            <div>
+                                <h3 class="card-title">AI内容工厂</h3>
+                                <p class="card-subtitle">内容创作自动化</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p class="text-gray-600 mb-4">
+                            AI驱动的内容创作、优化和发布。
+                            自动生成高质量内容，节省时间80%。
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <span class="text-2xl font-bold">€24.99</span>
+                                <span class="text-gray-500">/月</span>
+                            </div>
+                            <a href="/ai-content-factory" class="btn btn-primary btn-sm">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目3: AI Note App变现 -->
+                <div class="project-card card animate-slide-up delay-200">
+                    <div class="card-header">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-white text-2xl">
+                                📱
+                            </div>
+                            <div>
+                                <h3 class="card-title">AI笔记应用</h3>
+                                <p class="card-subtitle">智能笔记和变现</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p class="text-gray-600 mb-4">
+                            AI增强的笔记应用，智能整理、搜索和变现。
+                            将笔记转化为收入来源。
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <span class="text-2xl font-bold">€19.99</span>
+                                <span class="text-gray-500">/月</span>
+                            </div>
+                            <a href="/ai-note-app" class="btn btn-primary btn-sm">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目4: 数据分析报告服务 -->
+                <div class="project-card card animate-slide-up delay-300">
+                    <div class="card-header">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white text-2xl">
+                                📊
+                            </div>
+                            <div>
+                                <h3 class="card-title">数据分析报告</h3>
+                                <p class="card-subtitle">数据洞察和报告</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p class="text-gray-600 mb-4">
+                            自动化数据收集、分析和报告生成。
+                            提供 actionable insights，驱动业务增长。
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <span class="text-2xl font-bold">€39.99</span>
+                                <span class="text-gray-500">/月</span>
+                            </div>
+                            <a href="/data-analytics" class="btn btn-primary btn-sm">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目5: Deer Flow -->
+                <div class="project-card card animate-slide-up delay-400">
+                    <div class="card-header">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-white text-2xl">
+                                🦌
+                            </div>
+                            <div>
+                                <h3 class="card-title">Deer Flow</h3>
+                                <p class="card-subtitle">工作流自动化</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p class="text-gray-600 mb-4">
+                            可视化工作流构建器，自动化复杂业务流程。
+                            集成数百种工具和服务。
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <span class="text-2xl font-bold">€34.99</span>
+                                <span class="text-gray-500">/月</span>
+                            </div>
+                            <a href="/deer-flow" class="btn btn-primary btn-sm">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 项目6: 在线教育工厂 -->
+                <div class="project-card card animate-slide-up delay-500">
+                    <div class="card-header">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white text-2xl">
+                                📚
+                            </div>
+                            <div>
+                                <h3 class="card-title">在线教育工厂</h3>
+                                <p class="card-subtitle">教育内容自动化</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p class="text-gray-600 mb-4">
+                            AI驱动的课程创建、交付和评估。
+                            快速创建高质量教育内容。
+                        </p>
+                        
+                        <div class="flex items-center justify-between mt-6">
+                            <div>
+                                <span class="text-2xl font-bold">€44.99</span>
+                                <span class="text-gray-500">/月</span>
+                            </div>
+                            <a href="/online-education" class="btn btn-primary btn-sm">
+                                查看详情
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 查看更多按钮 -->
+            <div class="text-center mt-12">
+                <a href="#all-projects" class="btn btn-outline btn-lg">
+                    查看全部12个项目 →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💰 平台定价优势 -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">平台定价优势</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    单个项目订阅，或组合使用获得更大价值
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- 单项目 -->
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3 class="card-title">单项目</h3>
+                        <p class="card-subtitle">专注一个解决方案</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="text-4xl font-bold mb-2">€19.99+</div>
+                        <div class="text-gray-500 mb-6">每月/项目</div>
+                        
+                        <ul class="text-left space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>单个项目完整访问</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>标准支持</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>基础更新</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <span class="mr-2">×</span>
+                                <span>跨项目功能</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <span class="mr-2">×</span>
+                                <span>优先支持</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="#signup-single" class="btn btn-outline w-full">
+                            选择单项目
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 项目组合 (推荐) -->
+                <div class="card text-center border-2 border-primary relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
+                            最受欢迎
+                        </span>
+                    </div>
+                    
+                    <div class="card-header">
+                        <h3 class="card-title">项目组合</h3>
+                        <p class="card-subtitle">3个项目组合</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="text-4xl font-bold mb-2">€149.99</div>
+                        <div class="text-gray-500 mb-2">每月</div>
+                        <div class="text-success text-sm
