@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AI内容工厂 | EU CrossBorder AI平台</title>
+    <meta name="description" content="AI驱动的内容创作、优化和发布自动化平台。自动生成高质量内容，节省时间80%。">
+    
+    <link rel="stylesheet" href="../colors.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="../components.css">
+    
+    <style>
+        .content-type-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        
+        .content-type-card:hover {
+            border-left-color: var(--color-primary);
+            transform: translateX(8px);
+        }
+        
+        .feature-icon-large {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .workflow-step {
+            position: relative;
+            padding-left: 3rem;
+        }
+        
+        .workflow-step::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: var(--color-primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .workflow-step:nth-child(1)::before { content: '1'; }
+        .workflow-step:nth-child(2)::before { content: '2'; }
+        .workflow-step:nth-child(3)::before { content: '3'; }
+        .workflow-step:nth-child(4)::before { content: '4'; }
+        .workflow-step:nth-child(5)::before { content: '5'; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- 项目导航 -->
+    <header class="navbar container">
+        <a href="../platform_index.html" class="nav-logo">
+            <span>←</span>
+            <span>返回平台</span>
+        </a>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#overview" class="nav-link">概览</a></li>
+                <li><a href="#features" class="nav-link">特性</a></li>
+                <li><a href="#workflow" class="nav-link">工作流</a></li>
+                <li><a href="#pricing" class="nav-link">定价</a></li>
+                <li><a href="#start" class="btn btn-primary btn-sm">开始免费试用</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 项目英雄区域 -->
+    <section class="hero section" style="background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); color: white;">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="hero-title">
+                    <span class="text-white">AI内容工厂</span>
+                </h1>
+                
+                <p class="hero-subtitle text-white/90 max-w-3xl mx-auto">
+                    AI驱动的内容创作、优化和发布自动化平台。
+                    自动生成高质量内容，节省时间80%，提高参与度300%。
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <a href="#start" class="btn btn-white btn-xl">
+                        🚀 开始免费试用
+                    </a>
+                    <a href="#demo" class="btn btn-outline btn-xl text-white border-white hover:bg-white/10">
+                        📺 观看演示
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目概览 -->
+    <section id="overview" class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">自动化内容创作革命</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        AI内容工厂是专为内容创作者、营销人员和企业家设计的AI驱动平台。
+                        从创意生成到发布优化，全程自动化。
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-success mr-3">✓</span>
+                            <span>自动生成博客文章、社交媒体内容、邮件营销</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-success mr-3">✓</span>
+                            <span>SEO优化，提高搜索排名</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-success mr-3">✓</span>
+                            <span>多平台自动发布</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-success mr-3">✓</span>
+                            <span>性能分析和优化建议</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="text-center p-8">
+                        <div class="feature-icon-large bg-gradient-to-br from-purple-500 to-pink-600 text-white mx-auto">
+                            🏭
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">内容生产效率</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <span>传统方式</span>
+                                <span class="font-semibold">8小时/文章</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>AI内容工厂</span>
+                                <span class="font-semibold text-success">15分钟/文章</span>
+                            </div>
+                            <div class="h-4 bg-gray-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-success rounded-full" style="width: 3%"></div>
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                效率提升 <span class="font-bold text-success">96%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 支持的内容类型 -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">支持的内容类型</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    覆盖所有主流内容格式和平台
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="content-type-card card">
+                    <div class="text-3xl mb-4">📝</div>
+                    <h3 class="text-xl font-semibold mb-3">博客文章</h3>
+                    <p class="text-gray-600">
+                        长篇深度文章，SEO优化，结构完整，引用准确。
+                    </p>
+                </div>
+                
+                <div class="content-type-card card">
+                    <div class="text-3xl mb-4">📱</div>
+                    <h3 class="text-xl font-semibold mb-3">社交媒体</h3>
+                    <p class="text-gray-600">
+                        Twitter、LinkedIn、Facebook、Instagram内容，
+                        包括图片和视频文案。
+                    </p>
+                </div>
+                
+                <div class="content-type-card card">
+                    <div class="text-3xl mb-4">📧</div>
+                    <h3 class="text-xl font-semibold mb-3">邮件营销</h3>
+                    <p class="text-gray-600">
+                        新闻通讯、产品更新、促销邮件，
+                        个性化内容，高打开率。
+                    </p>
+                </div>
+                
+                <div class="content-type-card card">
+                    <div class="text-3xl mb-4">🎥</div>
+                    <h3 class="text-xl font-semibold mb-3">视频脚本</h3>
+                    <p class="text-gray-600">
+                        YouTube、TikTok、短视频脚本，
+                        包括分镜、对话、字幕。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作流程 -->
+    <section id="workflow" class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">5步自动化工作流</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    从创意到发布，全程自动化
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="workflow-step card">
+                    <h3 class="text-xl font-semibold mb-3">创意生成</h3>
+                    <p class="text-gray-600">
+                        基于您的行业、目标受众和关键词，AI生成内容创意和标题。
+                        分析趋势，预测热门话题。
+                    </p>
+                </div>
+                
+                <div class="workflow-step card">
+                    <h3 class="text-xl font-semibold mb-3">内容创作</h3>
+                    <p class="text-gray-600">
+                        AI撰写完整内容，包括引言、正文、结论。
+                        保持品牌声音，确保事实准确，引用来源。
+                    </p>
+                </div>
+                
+                <div class="workflow-step card">
+                    <h3 class="text-xl font-semibold mb-3">SEO优化</h3>
+                    <p class="text-gray-600">
+                        自动优化关键词密度、元标签、内部链接。
+                        提高搜索排名，增加有机流量。
+                    </p>
+                </div>
+                
+                <div class="workflow-step card">
+                    <h3 class="text-xl font-semibold mb-3">多平台发布</h3>
+                    <p class="text-gray-600">
+                        一键发布到WordPress、Medium、Substack等平台。
+                        自动格式化，添加标签，安排发布时间。
+                    </p>
+                </div>
+                
+                <div class="workflow-step card">
+                    <h3 class="text-xl font-semibold mb-3">性能分析</h3>
+                    <p class="text-gray-600">
+                        跟踪阅读量、参与度、转化率。
+                        AI分析数据，提供优化建议，持续改进。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定价 -->
+    <section id="pricing" class="section section-alt">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">简单透明的定价</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    按需付费，无隐藏费用
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3 class="card-title">起步版</h3>
+                        <p class="card-subtitle">个人创作者</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="text-4xl font-bold mb-2">€24.99</div>
+                        <div class="text-gray-500 mb-6">每月</div>
+                        
+                        <ul class="text-left space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>50篇文章/月</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>基础SEO优化</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>3个发布平台</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>邮件支持</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://buy.stripe.com/test_00g5mZ7lO1lCgGQ5kq" 
+                           class="btn btn-outline w-full"
+                           target="_blank">
+                            选择起步版
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card text-center border-2 border-primary relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
+                            最受欢迎
+                        </span>
+                    </div>
+                    
+                    <div class="card-header">
+                        <h3 class="card-title">专业版</h3>
+                        <p class="card-subtitle">营销团队</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="text-4xl font-bold mb-2">€49.99</div>
+                        <div class="text-gray-500 mb-2">每月</div>
+                        <div class="text-success text-sm font-semibold mb-2">年付节省20%</div>
+                        
+                        <ul class="text-left space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>200篇文章/月</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>高级SEO优化</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>10个发布平台</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>优先支持</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>团队协作</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="https://buy.stripe.com/test_00g5mZ7lO1lCgGQ5kq" 
+                           class="btn btn-primary w-full"
+                           target="_blank">
+                            🚀 选择专业版
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3 class="card-title">企业版</h3>
+                        <p class="card-subtitle">大型组织</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="text-4xl font-bold mb-2">€149.99</div>
+                        <div class="text-gray-500 mb-6">每月</div>
+                        
+                        <ul class="text-left space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>无限文章</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>企业级SEO</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>所有发布平台</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>专属客户经理</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-success mr-2">✓</span>
+                                <span>API访问</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="#contact" class="btn btn-outline w-full">
+                            联系销售
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="card text-center max-w-3xl mx-auto bg-gradient-to-br from-purple-500 to-pink-600 text-white">
+                <h2 class="text-2xl font-bold mb-4">开始自动化您的内容创作</h2>
+                <p class="mb-6 opacity-90">
+                    14天免费试用，体验AI内容工厂的强大功能。
+                    无需信用卡，立即开始。
+                </p>
+                
+                <a href="#start" class="btn btn-white">
+                    🚀 开始免费试用
+                </a>
+                
+                <p class="text-sm mt-6 opacity-75">
+                    ✅ 14天免费试用 • ✅ 30天退款保证 • ✅ 无需信用卡
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 返回平台 -->
+    <div class="container py    <div class="container py-8">
+        <div class="text-center">
+            <a href="../platform_index.html" class="btn btn-outline">
+                ← 返回平台首页
+            </a>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-title">AI内容工厂</div>
+                    <p class="text-gray-600 mb-4">
+                        AI驱动的内容创作、优化和发布自动化平台。
+                    </p>
+                </div>
+                
+                <div>
+                    <div class="footer-title">快速链接</div>
+                    <ul class="footer-links">
+                        <li><a href="../platform_index.html">平台首页</a></li>
+                        <li><a href="#overview">项目概览</a></li>
+                        <li><a href="#features">特性</a></li>
+                        <li><a href="#pricing">定价</a></li>
+                        <li><a href="#contact">联系</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <div class="footer-title">其他项目</div>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">EU跨境AI Agent</a></li>
+                        <li><a href="ai_note_app.html">AI笔记应用</a></li>
+                        <li><a href="data_analytics.html">数据分析报告</a></li>
+                        <li><a href="deer_flow.html">Deer Flow</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <div class="footer-title">法律</div>
+                    <ul class="footer-links">
+                        <li><a href="../privacy.html">隐私政策</a></li>
+                        <li><a href="../terms.html">服务条款</a></li>
+                        <li><a href="../cookies.html">Cookie政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div>
+                    © 2026 EU CrossBorder AI Solutions. 保留所有权利。
+                </div>
+                <div>
+                    <a href="../platform_index.html" class="text-gray-600 hover:text-primary">
+                        ← 返回EU CrossBorder AI平台
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // 内容类型卡片悬停
+            const contentCards = document.querySelectorAll('.content-type-card');
+            contentCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateX(8px)';
+                    card.style.borderLeftColor = 'var(--color-primary)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                    card.style.borderLeftColor = 'transparent';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
